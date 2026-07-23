@@ -4,7 +4,7 @@ import { GitFork, Monitor, Play, Layers } from 'lucide-react';
 import { Magnetic } from './Magnetic';
 import { useAudio } from '../context/AudioContext';
 import { playClickSound, playHoverSound } from '../utils/sound';
-import { projects, type Project } from '../data/projectsData';
+import { projects } from '../data/projectsData';
 
 type CategoryFilter = 'All' | 'Frontend' | 'Full-Stack' | 'CS / Algorithms';
 
