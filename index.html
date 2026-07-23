@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Instant Anti-White-Flash & Theme Hydration Script -->
+    <script>
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (savedTheme === 'dark' || (!savedTheme && prefersDark) || savedTheme === null) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.backgroundColor = '#0a0b10';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.backgroundColor = '#f8fafc';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      html, body, #root {
+        background-color: #0a0b10;
+        color: #f4f4f5;
+      }
+      html:not(.dark), html:not(.dark) body, html:not(.dark) #root {
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+    </style>
+    
+    <!-- Primary Meta Tags -->
+    <title>Karim Mohamed | Next-Gen Frontend Architect & CS Student</title>
+    <meta name="title" content="Karim Mohamed | Next-Gen Frontend Architect & CS Student" />
+    <meta name="description" content="Portfolio of Karim Mohamed, a 19-year-old Computer Science student at CIC and frontend engineer crafting high-performance, GPU-accelerated Bento Grid interfaces." />
+    <meta name="author" content="Karim Mohamed" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/kariimmohamed412-svg" />
+    <meta property="og:title" content="Karim Mohamed | Next-Gen Frontend Architect" />
+    <meta property="og:description" content="High-fidelity interactive web dashboards, animated bento cards, and extreme-performance React applications." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/kariimmohamed412-svg/final/main/preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/kariimmohamed412-svg" />
+    <meta property="twitter:title" content="Karim Mohamed | Next-Gen Frontend Architect" />
+    <meta property="twitter:description" content="High-fidelity interactive web dashboards, animated bento cards, and extreme-performance React applications." />
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/kariimmohamed412-svg/final/main/preview.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
