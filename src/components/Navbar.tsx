@@ -132,13 +132,27 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection 
         <div className="w-full px-4 md:px-5 flex items-center">
 
           {/* ── Logo ── */}
-          <div className="group shrink-0 flex items-center gap-2.5 cursor-pointer select-none" onClick={handleLogoClick}>
-            <div className="p-2 rounded-xl bg-gradient-to-br from-violet-600/30 to-cyan-500/30 border border-white/10 group-hover:border-cyan-400/50 group-hover:shadow-[0_0_12px_rgba(6,182,212,0.25)] transition-all duration-200">
-              <Terminal size={18} className="text-cyan-500 dark:text-cyan-300 group-hover:text-cyan-200 transition-colors duration-200" />
+          <div className="group shrink-0 flex items-center gap-3 cursor-pointer select-none" onClick={handleLogoClick}>
+            <div className="p-2 rounded-xl bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-cyan-500/30 group-hover:border-emerald-400/60 group-hover:shadow-[0_0_16px_rgba(16,185,129,0.3)] transition-all duration-300">
+              <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_10px_rgba(16,185,129,0.4)]" viewBox="0 0 100 100" fill="none">
+                <defs>
+                  <linearGradient id="navKinetixGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#22d3ee" />
+                    <stop offset="100%" stopColor="#10b981" />
+                  </linearGradient>
+                </defs>
+                <path 
+                  d="M 28 22 V 78 M 28 50 L 68 22 M 42 40 L 72 78" 
+                  stroke="url(#navKinetixGrad)" 
+                  strokeWidth="14" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                />
+              </svg>
             </div>
-            <div className="flex items-baseline gap-0.5">
-              <span className="text-base font-extrabold font-mono tracking-widest text-slate-950 dark:text-white group-hover:text-cyan-400 transition-colors duration-200">KM</span>
-              <span className="text-base font-mono font-semibold text-slate-900 dark:text-zinc-200 group-hover:text-white transition-colors duration-200">·OS</span>
+            <div className="flex items-baseline gap-1">
+              <span className="text-base font-extrabold font-mono tracking-wider text-slate-950 dark:text-white group-hover:text-cyan-400 transition-colors duration-200">KINETIX</span>
+              <span className="text-xs font-mono font-bold tracking-widest text-emerald-500 dark:text-emerald-400 group-hover:text-emerald-300 transition-colors duration-200">UI</span>
             </div>
           </div>
 

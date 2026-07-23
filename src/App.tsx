@@ -223,7 +223,7 @@ function App() {
         {/* Footer */}
         <footer className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-black/5 dark:border-white/5 text-sm font-mono text-slate-500 dark:text-zinc-400 gap-3 transition-colors duration-500">
           <span>
-            ENGINEERED_BY: <span className="text-slate-800 dark:text-zinc-200 font-semibold">Karim Mohamed</span>
+            © 2026 <span className="text-slate-800 dark:text-zinc-200 font-extrabold tracking-wider">KINETIX UI</span> · Next-Gen Front-end Development Co.
           </span>
           <span className="text-center">
             React · TypeScript · Tailwind · Framer Motion · Vite
@@ -233,7 +233,7 @@ function App() {
             className="hover:text-[var(--accent-hex,#22d3ee)] transition-colors duration-200 cursor-pointer"
             title="Click or type 'kmos' to launch terminal"
           >
-            host: kariimmohamed412-svg (type 'kmos')
+            host: kinetix-ui (type 'kmos')
           </button>
         </footer>
       </main>

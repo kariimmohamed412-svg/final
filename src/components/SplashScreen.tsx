@@ -8,10 +8,10 @@ interface SplashScreenProps {
 }
 
 const TERMINAL_LOGS = [
-  "> KM_OS_v2.4.0 initialization sequence started...",
-  "> Loading CIC CS Core Modules... [DONE]",
-  "> Fetching LeetCode & Bento Grid components... [DONE]",
-  "> ACCESS GRANTED: Welcome to Karim Mohamed's Digital Workspace 🚀"
+  "> KINETIX_UI_v3.0.0 initialization sequence started...",
+  "> Loading Next-Gen Core Modules & GPU Acceleration... [DONE]",
+  "> Fetching Bento Grid components & Web Audio API... [DONE]",
+  "> ACCESS GRANTED: Welcome to KINETIX UI Workspace 🚀"
 ];
 
 export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
@@ -101,7 +101,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
           <div className="flex items-center gap-2 text-xs text-cyan-400 font-semibold tracking-wider">
             <Terminal size={14} className="animate-pulse" />
-            <span>KM_OS_BOOT_SEQUENCE.sh</span>
+            <span>KINETIX_UI_BOOT.sh</span>
           </div>
 
           <div className="flex items-center gap-2 text-[10px] text-zinc-500 font-mono">
@@ -178,7 +178,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
                   : 'bg-zinc-900 border border-zinc-800 text-zinc-600 cursor-not-allowed opacity-60'
                   }`}
               >
-                <span>[ ENTER KM_OS ]</span>
+                <span>[ ENTER KINETIX UI ]</span>
                 <ArrowRight size={14} className={isReady ? 'animate-bounce-x' : ''} />
               </button>
             </div>
