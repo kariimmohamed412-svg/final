@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Terminal, Menu, X, Volume2, VolumeX, Sun, Moon, Clock } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Sun, Moon, Clock } from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useAudio } from '../context/AudioContext';
 import { useTheme } from '../context/ThemeContext';
